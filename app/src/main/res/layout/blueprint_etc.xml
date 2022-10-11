@@ -22,7 +22,7 @@
 
 
     <TextView
-        android:text="채팅"
+        android:text="기타"
         android:textColor="@color/white"
         android:gravity="center"
         android:id="@+id/view02"

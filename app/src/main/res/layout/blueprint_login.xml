@@ -22,7 +22,7 @@
 
 
     <TextView
-        android:text="주소록"
+        android:text="로그인"
         android:textColor="@color/white"
         android:gravity="center"
         android:id="@+id/view02"
@@ -37,155 +37,148 @@
     <LinearLayout
         android:layout_width="0dp"
         android:layout_height="0dp"
-        app:layout_constraintTop_toBottomOf="@id/btn01"
-        app:layout_constraintBottom_toTopOf="@id/btn05"
+        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintLeft_toRightOf="@id/view01"
         app:layout_constraintRight_toRightOf="parent"
         android:orientation="vertical"
         >
-
-        <TextView
-            android:layout_marginTop="2dp"
-            android:id="@+id/text01"
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:background="@color/purple_200"/>
-        <TextView
-            android:layout_marginTop="2dp"
-            android:id="@+id/text02"
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:background="@color/purple_200"/>
-        <TextView
-            android:layout_marginTop="2dp"
-            android:id="@+id/text03"
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:background="@color/purple_200"/>
-        <TextView
-            android:layout_marginTop="2dp"
-            android:id="@+id/text04"
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:background="@color/purple_200"/>
-        <TextView
-            android:layout_marginTop="2dp"
-            android:id="@+id/text05"
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:background="@color/purple_200"/>
-        <TextView
-            android:layout_marginTop="2dp"
-            android:id="@+id/text06"
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:background="@color/purple_200"/>
-        <TextView
-            android:layout_marginTop="2dp"
-            android:id="@+id/text07"
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:background="@color/purple_200"/>
-        <TextView
-            android:layout_marginTop="2dp"
-            android:id="@+id/text08"
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:background="@color/purple_200"/>
-        <TextView
-            android:layout_marginTop="2dp"
-            android:id="@+id/text09"
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:background="@color/purple_200"/>
-
     </LinearLayout>
 
-    <Button
-        android:id="@+id/btn01"
-        android:layout_width="0dp"
-        android:layout_height="60dp"
-        android:text="주소록"
-        app:layout_constraintWidth="match_constraint"
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
         app:layout_constraintTop_toBottomOf="@id/view02"
-        app:layout_constraintLeft_toRightOf="@id/view01"
-        app:layout_constraintRight_toLeftOf="@id/btn02"
-        />
+        app:layout_constraintBottom_toBottomOf="parent"
+        >
+    </LinearLayout>
 
-    <Button
-        android:id="@+id/btn02"
-        android:layout_width="0dp"
-        android:layout_height="60dp"
-        android:text="채팅"
-        app:layout_constraintWidth="match_constraint"
-        app:layout_constraintTop_toBottomOf="@id/view02"
-        app:layout_constraintLeft_toRightOf="@id/btn01"
-        app:layout_constraintRight_toLeftOf="@id/btn03"
-        />
 
-    <Button
-        android:id="@+id/btn03"
-        android:layout_width="0dp"
-        android:layout_height="60dp"
-        android:text="뷰"
-        app:layout_constraintWidth="match_constraint"
+    <ImageView
+        android:id="@+id/loginbox"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:background="@drawable/bordertext"
         app:layout_constraintTop_toBottomOf="@id/view02"
-        app:layout_constraintLeft_toRightOf="@id/btn02"
-        app:layout_constraintRight_toLeftOf="@id/btn04"
-        />
-
-    <Button
-        android:id="@+id/btn04"
-        android:layout_width="0dp"
-        android:layout_height="60dp"
-        android:text="기타"
-        app:layout_constraintWidth="match_constraint"
-        app:layout_constraintTop_toBottomOf="@id/view02"
-        app:layout_constraintLeft_toRightOf="@id/btn03"
+        app:layout_constraintBottom_toTopOf="@id/bottomEmptyView"
+        app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         />
-
-    <Button
-        android:id="@+id/btn05"
-        android:layout_width="0dp"
-        android:layout_height="60dp"
-        android:text="친구추가"
-        app:layout_constraintWidth="match_constraint"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toRightOf="@id/view01"
-        app:layout_constraintRight_toLeftOf="@id/btn06"
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text=" ID"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@id/idbox"
+        app:layout_constraintLeft_toLeftOf="@id/loginbox"
+        app:layout_constraintRight_toRightOf="@id/loginbox"/>
+    <EditText
+        android:id="@+id/idbox"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/border"
+        android:hint=" id를 입력하세요."
+        app:layout_constraintTop_toTopOf="@id/loginbox"
+        app:layout_constraintBottom_toTopOf="@id/pwbox"
+        app:layout_constraintLeft_toLeftOf="@id/loginbox"
+        app:layout_constraintRight_toRightOf="@id/loginbox"
+        app:layout_constraintVertical_chainStyle="packed"
         />
 
-    <Button
-        android:id="@+id/btn06"
-        android:layout_width="0dp"
-        android:layout_height="60dp"
-        android:text="친구삭제"
-        app:layout_constraintWidth="match_constraint"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toRightOf="@id/btn05"
-        app:layout_constraintRight_toLeftOf="@id/btn07"
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text=" Password"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@id/pwbox"
+        app:layout_constraintLeft_toLeftOf="@id/loginbox"
+        app:layout_constraintRight_toRightOf="@id/loginbox"/>
+
+    <EditText
+        android:id="@+id/pwbox"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:inputType="textPassword"
+        android:background="@drawable/border"
+        android:hint=" 패스워드를 입력하세요."
+        app:layout_constraintTop_toBottomOf="@id/idbox"
+        app:layout_constraintBottom_toBottomOf="@id/loginbox"
+        app:layout_constraintLeft_toLeftOf="@id/loginbox"
+        app:layout_constraintRight_toRightOf="@id/loginbox"
+        android:layout_marginBottom="50dp"
         />
 
-    <Button
-        android:id="@+id/btn07"
-        android:layout_width="0dp"
-        android:layout_height="60dp"
-        android:text="차단관리"
-        app:layout_constraintWidth="match_constraint"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toRightOf="@id/btn06"
-        app:layout_constraintRight_toLeftOf="@id/btn08"
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/loginbtn"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:text="로그인"
+        app:layout_constraintTop_toBottomOf="@id/pwbox"
+        app:layout_constraintBottom_toTopOf="@id/signup"
+        app:layout_constraintLeft_toLeftOf="@id/loginbox"
+        app:layout_constraintRight_toRightOf="@id/loginbox"
+        />
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/signup"
+        android:layout_width="105dp"
+        android:layout_height="40dp"
+        android:text="회원가입"
+        app:layout_constraintTop_toBottomOf="@id/loginbtn"
+        app:layout_constraintBottom_toBottomOf="@id/loginbox"
+        app:layout_constraintLeft_toLeftOf="@id/loginbox"
+        app:layout_constraintRight_toLeftOf="@id/forgotpassword"
+
         />
 
-    <Button
-        android:id="@+id/btn08"
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/forgotpassword"
+        android:layout_width="105dp"
+        android:layout_height="40dp"
+        android:text="비밀번호 찾기"
+        app:layout_constraintTop_toBottomOf="@id/loginbtn"
+        app:layout_constraintBottom_toBottomOf="@id/loginbox"
+        app:layout_constraintLeft_toRightOf="@id/signup"
+        app:layout_constraintRight_toRightOf="@id/loginbox"
+
+        />
+
+
+    <View
+        android:id="@+id/bottomEmptyView"
         android:layout_width="0dp"
-        android:layout_height="60dp"
-        android:text="btn08"
-        app:layout_constraintWidth="match_constraint"
+        android:layout_height="150dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toRightOf="@id/btn07"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/login_kakao"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:background="@drawable/loginbtn_kakao"
+        app:layout_constraintTop_toBottomOf="@id/loginbox"
+        app:layout_constraintBottom_toTopOf="@id/bottomEmptyView"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/loginemptybox"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        />
+    <View
+        android:id="@+id/loginemptybox"
+        android:layout_width="50dp"
+        android:layout_height="70dp"
+        app:layout_constraintTop_toBottomOf="@id/loginbox"
+        app:layout_constraintBottom_toTopOf="@id/bottomEmptyView"
+        app:layout_constraintLeft_toRightOf="@id/login_kakao"
+        app:layout_constraintRight_toLeftOf="@id/login_naver"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/login_naver"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:background="@drawable/loginbtn_naver"
+        app:layout_constraintTop_toBottomOf="@id/loginbox"
+        app:layout_constraintBottom_toTopOf="@id/bottomEmptyView"
+        app:layout_constraintLeft_toRightOf="@id/loginemptybox"
         app:layout_constraintRight_toRightOf="parent"
         />
 
