@@ -40,12 +40,82 @@
         android:layout_height="0dp"
         android:background="#9bbbd4"
         android:orientation="vertical"
-        app:layout_constraintHorizontal_bias="0.0"
+
         app:layout_constraintLeft_toRightOf="@id/view01"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@id/view02"
-        app:layout_constraintBottom_toTopOf="@id/chatwrite"
-        app:layout_constraintVertical_bias="0.0"></LinearLayout>
+        app:layout_constraintBottom_toTopOf="@id/chatwrite">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_margin="5dp"
+            android:text="보낸메시지1"
+            android:layout_gravity="right"
+            android:background="@drawable/chat_bubble_send"/>
+
+        <LinearLayout
+            android:layout_marginLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@mipmap/default_profile_background"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_margin="5dp"
+                android:text="받은 메시지1"
+                android:background="@drawable/chat_bubble_receive"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_margin="5dp"
+            android:text="보낸메시지2"
+            android:layout_gravity="right"
+            android:background="@drawable/chat_bubble_send"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_margin="5dp"
+            android:text="보낸메시지3"
+            android:layout_gravity="right"
+            android:background="@drawable/chat_bubble_send"/>
+
+        <LinearLayout
+            android:layout_marginLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@mipmap/default_profile_background"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_margin="5dp"
+                android:text="받은 메시지2"
+                android:background="@drawable/chat_bubble_receive"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
 
     <EditText
         android:id="@+id/chatwrite"
@@ -57,6 +127,8 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toLeftOf="@id/chattoolbox"
         />
+
+
     <View
         android:id="@+id/chattoolbox"
         android:layout_width="100dp"
@@ -71,6 +143,7 @@
         android:layout_height="40dp"
         android:layout_marginTop="10dp"
         android:background="#fef01b"
+        android:text="전송"
         app:layout_constraintTop_toTopOf="@id/chattoolbox"
         app:layout_constraintLeft_toLeftOf="@id/chattoolbox"
         app:layout_constraintRight_toRightOf="@id/chattoolbox"
