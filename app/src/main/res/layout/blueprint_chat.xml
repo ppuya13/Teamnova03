@@ -65,7 +65,7 @@
             <ImageView
                 android:layout_width="50dp"
                 android:layout_height="50dp"
-                android:src="@mipmap/default_profile_round"
+                android:src="@drawable/default_profile"
                 />
             <TextView
                 android:layout_width="wrap_content"
@@ -103,7 +103,7 @@
             <ImageView
                 android:layout_width="50dp"
                 android:layout_height="50dp"
-                android:src="@mipmap/default_profile_round"
+                android:src="@drawable/default_profile"
                 />
             <TextView
                 android:layout_width="wrap_content"
