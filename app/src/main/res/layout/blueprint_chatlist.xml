@@ -5,183 +5,140 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <TextView
-        android:text="친구"
-        android:textColor="@color/white"
-        android:gravity="center"
-        android:id="@+id/view01"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/view02"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        android:background="@color/design_default_color_primary_variant"
-        />
 
-
-    <TextView
-        android:text="주소록"
-        android:textColor="@color/white"
-        android:gravity="center"
+    <LinearLayout
         android:id="@+id/view02"
         android:layout_width="0dp"
         android:layout_height="60dp"
+        android:paddingLeft="10dp"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintLeft_toRightOf="@id/view01"
-        android:background="@color/design_default_color_primary"
-        />
+        app:layout_constraintLeft_toLeftOf="parent"
+        >
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="채팅목록"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:gravity="center_vertical"/>
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+        <ImageView
+            android:id="@+id/findbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/find"/>
+        <ImageView
+            android:id="@+id/addchatbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/addchat"/>
+        <ImageView
+            android:id="@+id/addopenchatbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/addopenchat"/>
+        <ImageView
+            android:id="@+id/settingbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/setting"/>
+    </LinearLayout>
+
+    <!--    채팅방리스트-->
     <LinearLayout
         android:layout_width="0dp"
         android:layout_height="0dp"
-        app:layout_constraintTop_toBottomOf="@id/btn01"
+        app:layout_constraintTop_toBottomOf="@id/view02"
         app:layout_constraintBottom_toTopOf="@id/btn05"
-        app:layout_constraintLeft_toRightOf="@id/view01"
+        app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         android:orientation="vertical"
         >
 
-        <TextView
-            android:layout_marginTop="2dp"
-            android:id="@+id/text01"
+        <!--    채팅방 1줄    -->
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:background="@color/purple_200"/>
-        <TextView
-            android:layout_marginTop="2dp"
-            android:id="@+id/text02"
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:background="@color/purple_200"/>
-        <TextView
-            android:layout_marginTop="2dp"
-            android:id="@+id/text03"
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:background="@color/purple_200"/>
-        <TextView
-            android:layout_marginTop="2dp"
-            android:id="@+id/text04"
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:background="@color/purple_200"/>
-        <TextView
-            android:layout_marginTop="2dp"
-            android:id="@+id/text05"
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:background="@color/purple_200"/>
-        <TextView
-            android:layout_marginTop="2dp"
-            android:id="@+id/text06"
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:background="@color/purple_200"/>
-        <TextView
-            android:layout_marginTop="2dp"
-            android:id="@+id/text07"
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:background="@color/purple_200"/>
-        <TextView
-            android:layout_marginTop="2dp"
-            android:id="@+id/text08"
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:background="@color/purple_200"/>
-        <TextView
-            android:layout_marginTop="2dp"
-            android:id="@+id/text09"
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:background="@color/purple_200"/>
+            android:layout_height="80dp">
+
+            <!--            채팅방 썸네일-->
+            <LinearLayout
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                >
+
+                <!--                채팅방 썸네일 사진-->
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/chat_thumbnail"
+                        android:src="@drawable/default_profile"
+                        />
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/chat_thumbnail"
+                        android:src="@drawable/default_profile"
+                        />
+
+            </LinearLayout>
+
+        </LinearLayout>
 
     </LinearLayout>
 
-    <Button
-        android:id="@+id/btn01"
-        android:layout_width="0dp"
-        android:layout_height="60dp"
-        android:text="주소록"
-        app:layout_constraintWidth="match_constraint"
-        app:layout_constraintTop_toBottomOf="@id/view02"
-        app:layout_constraintLeft_toRightOf="@id/view01"
-        app:layout_constraintRight_toLeftOf="@id/btn02"
-        />
 
-    <Button
-        android:id="@+id/btn02"
-        android:layout_width="0dp"
-        android:layout_height="60dp"
-        android:text="채팅"
-        app:layout_constraintWidth="match_constraint"
-        app:layout_constraintTop_toBottomOf="@id/view02"
-        app:layout_constraintLeft_toRightOf="@id/btn01"
-        app:layout_constraintRight_toLeftOf="@id/btn03"
-        />
 
-    <Button
-        android:id="@+id/btn03"
-        android:layout_width="0dp"
-        android:layout_height="60dp"
-        android:text="뷰"
-        app:layout_constraintWidth="match_constraint"
-        app:layout_constraintTop_toBottomOf="@id/view02"
-        app:layout_constraintLeft_toRightOf="@id/btn02"
-        app:layout_constraintRight_toLeftOf="@id/btn04"
-        />
 
-    <Button
-        android:id="@+id/btn04"
-        android:layout_width="0dp"
-        android:layout_height="60dp"
-        android:text="기타"
-        app:layout_constraintWidth="match_constraint"
-        app:layout_constraintTop_toBottomOf="@id/view02"
-        app:layout_constraintLeft_toRightOf="@id/btn03"
-        app:layout_constraintRight_toRightOf="parent"
-        />
 
-    <Button
+    <ImageButton
         android:id="@+id/btn05"
         android:layout_width="0dp"
         android:layout_height="60dp"
-        android:text="친구추가"
+        android:background="#f9f9f9"
+        android:src="@drawable/adress"
         app:layout_constraintWidth="match_constraint"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toRightOf="@id/view01"
+        app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toLeftOf="@id/btn06"
         />
-
-    <Button
+    <ImageButton
         android:id="@+id/btn06"
         android:layout_width="0dp"
         android:layout_height="60dp"
-        android:text="친구삭제"
+        android:background="#f9f9f9"
+        android:src="@drawable/chatlist"
         app:layout_constraintWidth="match_constraint"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toRightOf="@id/btn05"
         app:layout_constraintRight_toLeftOf="@id/btn07"
         />
 
-    <Button
+    <ImageButton
         android:id="@+id/btn07"
         android:layout_width="0dp"
         android:layout_height="60dp"
-        android:text="차단관리"
+        android:background="#f9f9f9"
+        android:src="@drawable/viewlist"
         app:layout_constraintWidth="match_constraint"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toRightOf="@id/btn06"
         app:layout_constraintRight_toLeftOf="@id/btn08"
         />
 
-    <Button
+    <ImageButton
         android:id="@+id/btn08"
         android:layout_width="0dp"
         android:layout_height="60dp"
-        android:text="btn08"
+        android:background="#f9f9f9"
+        android:src="@drawable/etc"
         app:layout_constraintWidth="match_constraint"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toRightOf="@id/btn07"
