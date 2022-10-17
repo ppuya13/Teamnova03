@@ -17,9 +17,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         android:background="@color/design_default_color_primary_variant"
-
         />
->>>>>>> parent of e0d2b0b (퇴근후 조금함)
 
     <LinearLayout
         android:id="@+id/view02"
