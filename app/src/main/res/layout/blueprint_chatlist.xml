@@ -64,6 +64,7 @@
 
     <!--    채팅방리스트-->
     <LinearLayout
+        android:id="@+id/chatlist_main"
         android:layout_width="0dp"
         android:layout_height="0dp"
         app:layout_constraintTop_toBottomOf="@id/view02"
@@ -76,11 +77,13 @@
         <!--    채팅방 1줄    -->
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="80dp">
+            android:layout_height="70dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp">
 
             <!--            채팅방 썸네일-->
             <LinearLayout
-                android:layout_width="80dp"
+                android:layout_width="70dp"
                 android:layout_height="match_parent"
                 android:layout_marginLeft="10dp"
                 >
@@ -90,6 +93,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:layout_margin="2dp"
                     android:background="@drawable/chat_thumbnail"
                     android:src="@drawable/default_profile"
                     />
@@ -97,13 +101,162 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:layout_margin="2dp"
                     android:background="@drawable/chat_thumbnail"
                     android:src="@drawable/default_profile"
                     />
 
             </LinearLayout>
-
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/mark_open_chat"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:gravity="center"
+                        android:text="첫번째 채팅방(리니어)"
+                        android:textStyle="bold"
+                        android:textSize="20dp"
+                        android:textColor="#000000"
+                        />
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="5dp"
+                        android:src="@drawable/mark_pin"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="center"
+                        android:text="받은메시지 2"
+                        android:textSize="15dp"
+                        android:textColor="#808080"/>
+                </LinearLayout>
+            </LinearLayout>
         </LinearLayout>
+
+        <!--    채팅방 1줄    -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp">
+
+            <!--            채팅방 썸네일 세로-->
+            <LinearLayout
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:orientation="vertical"
+                >
+
+                <!--                채팅방 썸네일 가로-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_weight="1"
+                    >
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_margin="2dp"
+                        android:background="@drawable/chat_thumbnail"
+                        android:src="@drawable/default_profile"
+                        />
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_margin="2dp"
+                        android:background="@drawable/chat_thumbnail"
+                        android:src="@drawable/default_profile"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_weight="1"
+                    >
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_margin="2dp"
+                        android:background="@drawable/chat_thumbnail"
+                        android:src="@drawable/default_profile"
+                        />
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:gravity="center"
+                        android:text="두번째 채팅방(리니어)"
+                        android:textStyle="bold"
+                        android:textSize="20dp"
+                        android:textColor="#000000"
+                        />
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="5dp"
+                        android:src="@drawable/mark_pin"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="center"
+                        android:text="받은메시지"
+                        android:textSize="15dp"
+                        android:textColor="#808080"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+
 
     </LinearLayout>
 
@@ -133,7 +286,6 @@
         app:layout_constraintLeft_toRightOf="@id/btn05"
         app:layout_constraintRight_toLeftOf="@id/btn07"
         />
-
     <ImageButton
         android:id="@+id/btn07"
         android:layout_width="0dp"
@@ -145,7 +297,6 @@
         app:layout_constraintLeft_toRightOf="@id/btn06"
         app:layout_constraintRight_toLeftOf="@id/btn08"
         />
-
     <ImageButton
         android:id="@+id/btn08"
         android:layout_width="0dp"
