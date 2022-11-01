@@ -147,7 +147,7 @@
                         android:layout_height="match_parent"
                         android:layout_marginLeft="10dp"
                         android:gravity="center"
-                        android:text="받은메시지 2"
+                        android:text="받은메시지"
                         android:textSize="15dp"
                         android:textColor="#808080"/>
                 </LinearLayout>
@@ -249,7 +249,7 @@
                         android:layout_height="match_parent"
                         android:layout_marginLeft="10dp"
                         android:gravity="center"
-                        android:text="받은메시지"
+                        android:text="받은메시지 2"
                         android:textSize="15dp"
                         android:textColor="#808080"/>
                 </LinearLayout>
@@ -260,7 +260,277 @@
 
     </LinearLayout>
 
+    <!--    컨스트-->
+    <View
+        android:id="@+id/const_empty"
+        android:layout_width="match_parent"
+        android:layout_height="154dp"
+        app:layout_constraintTop_toBottomOf="@id/view02"
+        app:layout_constraintLeft_toLeftOf="parent"
+        />
+    <View
+        android:id="@+id/const_chat_01"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/const_empty"/>
 
+    <View
+        android:id="@+id/const_chat_01_thumbnailbox"
+        android:layout_width="70dp"
+        android:layout_height="0dp"
+        android:layout_marginLeft="10dp"
+        app:layout_constraintHeight="match_constraint"
+        app:layout_constraintTop_toTopOf="@id/const_chat_01"
+        app:layout_constraintBottom_toBottomOf="@id/const_chat_01"
+        app:layout_constraintLeft_toLeftOf="@id/const_chat_01"
+        />
+    <ImageView
+        android:id="@+id/const_chat_01_thunbnail_01"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/default_profile"
+        android:layout_margin="2dp"
+        app:layout_constraintTop_toTopOf="@id/const_chat_01_thumbnailbox"
+        app:layout_constraintBottom_toTopOf="@id/const_chat_01_thunbnail_03"
+        app:layout_constraintLeft_toLeftOf="@id/const_chat_01_thumbnailbox"
+        app:layout_constraintRight_toLeftOf="@id/const_chat_01_thunbnail_02"
+        />
+    <ImageView
+        android:id="@+id/const_chat_01_thunbnail_02"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/default_profile"
+        android:layout_margin="2dp"
+        app:layout_constraintTop_toTopOf="@id/const_chat_01_thumbnailbox"
+        app:layout_constraintBottom_toTopOf="@id/const_chat_01_thunbnail_04"
+        app:layout_constraintLeft_toRightOf="@id/const_chat_01_thunbnail_01"
+        app:layout_constraintRight_toRightOf="@id/const_chat_01_thumbnailbox"
+        />
+    <ImageView
+        android:id="@+id/const_chat_01_thunbnail_03"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/default_profile"
+        android:layout_margin="2dp"
+        app:layout_constraintTop_toBottomOf="@id/const_chat_01_thunbnail_01"
+        app:layout_constraintBottom_toBottomOf="@id/const_chat_01_thumbnailbox"
+        app:layout_constraintLeft_toLeftOf="@id/const_chat_01_thumbnailbox"
+        app:layout_constraintRight_toLeftOf="@id/const_chat_01_thunbnail_04"
+        />
+    <ImageView
+        android:id="@+id/const_chat_01_thunbnail_04"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/default_profile"
+        android:layout_margin="2dp"
+        app:layout_constraintTop_toBottomOf="@id/const_chat_01_thunbnail_02"
+        app:layout_constraintBottom_toBottomOf="@id/const_chat_01_thumbnailbox"
+        app:layout_constraintLeft_toRightOf="@id/const_chat_01_thunbnail_03"
+        app:layout_constraintRight_toRightOf="@id/const_chat_01_thumbnailbox"
+        />
+    <View
+        android:id="@+id/const_chat_01_contents"
+        android:layout_width="0dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/const_empty"
+        app:layout_constraintLeft_toRightOf="@id/const_chat_01_thumbnailbox"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+    <View
+        android:id="@+id/const_chat_01_contents_titleline"
+        android:layout_width="0dp"
+        android:layout_height="35dp"
+        app:layout_constraintTop_toTopOf="@id/const_chat_01_contents"
+        app:layout_constraintLeft_toRightOf="@id/const_chat_01_thumbnailbox"
+        app:layout_constraintRight_toRightOf="@id/const_chat_01_contents"
+        />
+    <View
+        android:id="@+id/const_chat_01_contents_previewline"
+        android:layout_width="0dp"
+        android:layout_height="35dp"
+        app:layout_constraintTop_toBottomOf="@id/const_chat_01_contents_titleline"
+        app:layout_constraintLeft_toRightOf="@id/const_chat_01_thumbnailbox"
+        app:layout_constraintRight_toRightOf="@id/const_chat_01_contents"
+        />
+    <ImageView
+        android:id="@+id/const_chat_01_contents_mark_open_chat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:src="@drawable/mark_open_chat"
+        app:layout_constraintTop_toTopOf="@id/const_chat_01_contents_titleline"
+        app:layout_constraintBottom_toBottomOf="@id/const_chat_01_contents_titleline"
+        app:layout_constraintLeft_toRightOf="@id/const_chat_01_thumbnailbox"
+        />
+    <TextView
+        android:id="@+id/const_chat_01_contents_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="세번째 채팅방(컨스트)"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        app:layout_constraintTop_toTopOf="@id/const_chat_01_contents_titleline"
+        app:layout_constraintBottom_toBottomOf="@id/const_chat_01_contents_titleline"
+        app:layout_constraintLeft_toRightOf="@id/const_chat_01_contents_mark_open_chat"
+        />
+    <ImageView
+        android:layout_width="15dp"
+        android:layout_height="35dp"
+        android:layout_marginLeft="10dp"
+        android:src="@drawable/mark_pin"
+        app:layout_constraintTop_toTopOf="@id/const_chat_01_contents_titleline"
+        app:layout_constraintBottom_toBottomOf="@id/const_chat_01_contents_titleline"
+        app:layout_constraintLeft_toRightOf="@id/const_chat_01_contents_title"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="받은메시지3"
+        android:layout_marginLeft="10dp"
+        android:textSize="15dp"
+        android:textColor="#808080"
+        app:layout_constraintTop_toTopOf="@id/const_chat_01_contents_previewline"
+        app:layout_constraintBottom_toBottomOf="@id/const_chat_01_contents_previewline"
+        app:layout_constraintLeft_toRightOf="@id/const_chat_01_thumbnailbox"
+        />
+
+
+
+    <!--    컨스트2-->
+    <View
+        android:id="@+id/const_chat_02"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/const_chat_01"/>
+
+    <View
+        android:id="@+id/const_chat_02_thumbnailbox"
+        android:layout_width="70dp"
+        android:layout_height="0dp"
+        android:layout_marginLeft="10dp"
+        app:layout_constraintHeight="match_constraint"
+        app:layout_constraintTop_toTopOf="@id/const_chat_02"
+        app:layout_constraintBottom_toBottomOf="@id/const_chat_02"
+        app:layout_constraintLeft_toLeftOf="@id/const_chat_02"
+        />
+    <ImageView
+        android:id="@+id/const_chat_02_thunbnail_01"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/default_profile"
+        android:layout_margin="2dp"
+        app:layout_constraintTop_toTopOf="@id/const_chat_02_thumbnailbox"
+        app:layout_constraintBottom_toTopOf="@id/const_chat_02_thunbnail_03"
+        app:layout_constraintLeft_toLeftOf="@id/const_chat_02_thumbnailbox"
+        app:layout_constraintRight_toLeftOf="@id/const_chat_02_thunbnail_02"
+        />
+    <ImageView
+        android:id="@+id/const_chat_02_thunbnail_02"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/default_profile"
+        android:layout_margin="2dp"
+        app:layout_constraintTop_toTopOf="@id/const_chat_02_thumbnailbox"
+        app:layout_constraintBottom_toTopOf="@id/const_chat_02_thunbnail_04"
+        app:layout_constraintLeft_toRightOf="@id/const_chat_02_thunbnail_01"
+        app:layout_constraintRight_toRightOf="@id/const_chat_02_thumbnailbox"
+        />
+    <ImageView
+        android:id="@+id/const_chat_02_thunbnail_03"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/default_profile"
+        android:layout_margin="2dp"
+        app:layout_constraintTop_toBottomOf="@id/const_chat_02_thunbnail_01"
+        app:layout_constraintBottom_toBottomOf="@id/const_chat_02_thumbnailbox"
+        app:layout_constraintLeft_toLeftOf="@id/const_chat_02_thumbnailbox"
+        app:layout_constraintRight_toRightOf="@id/const_chat_01_thumbnailbox"
+        />
+    <ImageView
+        android:id="@+id/const_chat_02_thunbnail_04"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_margin="2dp"
+        app:layout_constraintTop_toBottomOf="@id/const_chat_02_thunbnail_02"
+        app:layout_constraintBottom_toBottomOf="@id/const_chat_02_thumbnailbox"
+        app:layout_constraintLeft_toLeftOf="@id/const_chat_01_thumbnailbox"
+        app:layout_constraintRight_toRightOf="@id/const_chat_02_thumbnailbox"
+        />
+    <View
+        android:id="@+id/const_chat_02_contents"
+        android:layout_width="0dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/const_chat_01"
+        app:layout_constraintLeft_toRightOf="@id/const_chat_02_thumbnailbox"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+    <View
+        android:id="@+id/const_chat_02_contents_titleline"
+        android:layout_width="0dp"
+        android:layout_height="35dp"
+        app:layout_constraintTop_toTopOf="@id/const_chat_02_contents"
+        app:layout_constraintLeft_toRightOf="@id/const_chat_02_thumbnailbox"
+        app:layout_constraintRight_toRightOf="@id/const_chat_02_contents"
+        />
+    <View
+        android:id="@+id/const_chat_02_contents_previewline"
+        android:layout_width="0dp"
+        android:layout_height="35dp"
+        app:layout_constraintTop_toBottomOf="@id/const_chat_02_contents_titleline"
+        app:layout_constraintLeft_toRightOf="@id/const_chat_02_thumbnailbox"
+        app:layout_constraintRight_toRightOf="@id/const_chat_02_contents"
+        />
+    <ImageView
+        android:id="@+id/const_chat_02_contents_mark_open_chat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:src="@drawable/mark_open_chat"
+        app:layout_constraintTop_toTopOf="@id/const_chat_02_contents_titleline"
+        app:layout_constraintBottom_toBottomOf="@id/const_chat_02_contents_titleline"
+        app:layout_constraintLeft_toRightOf="@id/const_chat_02_thumbnailbox"
+        />
+    <TextView
+        android:id="@+id/const_chat_02_contents_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="네번째 채팅방(컨스트)"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        app:layout_constraintTop_toTopOf="@id/const_chat_02_contents_titleline"
+        app:layout_constraintBottom_toBottomOf="@id/const_chat_02_contents_titleline"
+        app:layout_constraintLeft_toRightOf="@id/const_chat_02_contents_mark_open_chat"
+        />
+    <ImageView
+        android:layout_width="15dp"
+        android:layout_height="35dp"
+        android:layout_marginLeft="10dp"
+        android:src="@drawable/mark_pin"
+        app:layout_constraintTop_toTopOf="@id/const_chat_02_contents_titleline"
+        app:layout_constraintBottom_toBottomOf="@id/const_chat_02_contents_titleline"
+        app:layout_constraintLeft_toRightOf="@id/const_chat_02_contents_title"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="받은메시지4"
+        android:layout_marginLeft="10dp"
+        android:textSize="15dp"
+        android:textColor="#808080"
+        app:layout_constraintTop_toTopOf="@id/const_chat_02_contents_previewline"
+        app:layout_constraintBottom_toBottomOf="@id/const_chat_02_contents_previewline"
+        app:layout_constraintLeft_toRightOf="@id/const_chat_02_thumbnailbox"
+        />
 
 
 
