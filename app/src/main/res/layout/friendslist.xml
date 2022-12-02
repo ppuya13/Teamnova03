@@ -14,7 +14,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:text="친구"
+            android:text="친구(리니어)"
             android:textSize="25dp"
             android:textColor="#000000"
             android:textStyle="bold"
@@ -96,17 +96,322 @@
         <!--        멀티프로필-->
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="100dp">
+            android:layout_height="90dp"
+            android:orientation="vertical">
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="내 멀티프로필 1"
+                android:text="내 멀티프로필 2"
                 android:textColor="#929292"/>
+
+            <!--            멀티프로필 박스-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:orientation="horizontal">
+
+                <!--                멀티프로필 객체1-->
+                <LinearLayout
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/default_profile"/>
+                    <TextView
+                        android:layout_width="40dp"
+                        android:layout_height="15dp"
+                        android:text="멀티1"
+                        android:textStyle="bold"
+                        android:textSize="12dp"
+                        android:textColor="#000000"
+                        android:textAlignment="center"/>
+                </LinearLayout>
+                <!--                멀티프로필 객체2-->
+                <LinearLayout
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/default_profile"/>
+                    <TextView
+                        android:layout_width="40dp"
+                        android:layout_height="15dp"
+                        android:text="멀티2"
+                        android:textStyle="bold"
+                        android:textSize="12dp"
+                        android:textColor="#000000"
+                        android:textAlignment="center"/>
+                </LinearLayout>
+                <!--                멀티프로필 객체3-->
+                <LinearLayout
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/create"/>
+                    <TextView
+                        android:layout_width="40dp"
+                        android:layout_height="15dp"
+                        android:text="만들기"
+                        android:textStyle="bold"
+                        android:textSize="12dp"
+                        android:textColor="#000000"
+                        android:textAlignment="center"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <!--        멀티프로필과 생일 구분선-->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#e9e9e9"
+            android:layout_marginVertical="5dp"/>
+
+        <!--생일인 친구-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="생일인 친구"
+                android:textColor="#929292"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/birthday_friends"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="친구의 생일을 확인해보세요!"
+                    android:textStyle="bold"
+                    android:textSize="16dp"
+                    android:textColor="#000000"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="1 >"
+                    android:gravity="center_vertical"
+                    android:textColor="#929292"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <!--    생일인 친구와 업데이트한 친구 구분선-->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginVertical="5dp"
+            android:background="#e9e9e9"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="업데이트한 친구 4"
+                android:textColor="#929292"/>
+            <!--            업데이트한 친구 박스-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:orientation="horizontal">
+
+                <!--                업데이트한 친구 객체1-->
+                <LinearLayout
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/default_profile"/>
+                    <TextView
+                        android:layout_width="40dp"
+                        android:layout_height="15dp"
+                        android:text="친구1"
+                        android:textStyle="bold"
+                        android:textSize="12dp"
+                        android:textColor="#000000"
+                        android:textAlignment="center"/>
+                </LinearLayout>
+                <!--                업데이트한 친구 객체2-->
+                <LinearLayout
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/default_profile"/>
+                    <TextView
+                        android:layout_width="40dp"
+                        android:layout_height="15dp"
+                        android:text="친구2"
+                        android:textStyle="bold"
+                        android:textSize="12dp"
+                        android:textColor="#000000"
+                        android:textAlignment="center"/>
+                </LinearLayout>
+                <!--                업데이트한 친구 객체3-->
+                <LinearLayout
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/default_profile"/>
+                    <TextView
+                        android:layout_width="40dp"
+                        android:layout_height="15dp"
+                        android:text="친구3"
+                        android:textStyle="bold"
+                        android:textSize="12dp"
+                        android:textColor="#000000"
+                        android:textAlignment="center"/>
+                </LinearLayout>
+                <!--                업데이트한 친구 객체4-->
+                <LinearLayout
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/default_profile"/>
+                    <TextView
+                        android:layout_width="40dp"
+                        android:layout_height="15dp"
+                        android:text="친구4"
+                        android:textStyle="bold"
+                        android:textSize="12dp"
+                        android:textColor="#000000"
+                        android:textAlignment="center"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <!--    업데이트한 친구와 즐겨찾기 구분선-->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginVertical="5dp"
+            android:background="#e9e9e9"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="즐겨찾기"
+                android:textColor="#929292"/>
+            <!--            즐겨찾기 박스-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <!--                즐겨찾기 객체들-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/default_profile"
+                        android:layout_marginRight="10dp"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center_vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="친구1"
+                            android:textSize="17dp"
+                            android:textColor="#000000"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="상태메시지"
+                            android:textSize="12dp"
+                            android:textColor="#929292"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
         </LinearLayout>
     </LinearLayout>
-
-
-
-
-
 </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
