@@ -64,7 +64,6 @@
 
     <!--    채팅방리스트-->
     <LinearLayout
-        android:id="@+id/chatlist_main"
         android:layout_width="0dp"
         android:layout_height="0dp"
         app:layout_constraintTop_toBottomOf="@id/view02"
@@ -77,13 +76,11 @@
         <!--    채팅방 1줄    -->
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="70dp"
-            android:layout_marginTop="5dp"
-            android:layout_marginBottom="5dp">
+            android:layout_height="80dp">
 
             <!--            채팅방 썸네일-->
             <LinearLayout
-                android:layout_width="70dp"
+                android:layout_width="80dp"
                 android:layout_height="match_parent"
                 android:layout_marginLeft="10dp"
                 >
@@ -93,7 +90,6 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:layout_margin="2dp"
                     android:background="@drawable/chat_thumbnail"
                     android:src="@drawable/default_profile"
                     />
@@ -101,271 +97,14 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:layout_margin="2dp"
                     android:background="@drawable/chat_thumbnail"
                     android:src="@drawable/default_profile"
                     />
 
             </LinearLayout>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical">
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="0dp"
-                    android:layout_weight="1"
-                    android:orientation="horizontal">
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:layout_marginLeft="10dp"
-                        android:src="@drawable/mark_open_chat"/>
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:layout_marginLeft="5dp"
-                        android:layout_marginRight="5dp"
-                        android:gravity="center"
-                        android:text="첫번째 채팅방(리니어)"
-                        android:textStyle="bold"
-                        android:textSize="20dp"
-                        android:textColor="#000000"
-                        />
-                    <ImageView
-                        android:layout_width="15dp"
-                        android:layout_height="match_parent"
-                        android:layout_marginLeft="5dp"
-                        android:src="@drawable/mark_pin"/>
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="0dp"
-                    android:layout_weight="1">
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:layout_marginLeft="10dp"
-                        android:gravity="center"
-                        android:text="받은메시지 2"
-                        android:textSize="15dp"
-                        android:textColor="#808080"/>
-                </LinearLayout>
-            </LinearLayout>
+
         </LinearLayout>
 
-        <!--    채팅방 1줄    -->
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="70dp"
-            android:layout_marginTop="5dp"
-            android:layout_marginBottom="5dp">
-
-            <!--            채팅방 썸네일 세로-->
-            <LinearLayout
-                android:layout_width="70dp"
-                android:layout_height="match_parent"
-                android:layout_marginLeft="10dp"
-                android:orientation="vertical"
-                >
-
-                <!--                채팅방 썸네일 가로-->
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal"
-                    android:layout_weight="1"
-                    >
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:layout_margin="2dp"
-                        android:background="@drawable/chat_thumbnail"
-                        android:src="@drawable/default_profile"
-                        />
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:layout_margin="2dp"
-                        android:background="@drawable/chat_thumbnail"
-                        android:src="@drawable/default_profile"
-                        />
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal"
-                    android:layout_weight="1"
-                    >
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:layout_margin="2dp"
-                        android:background="@drawable/chat_thumbnail"
-                        android:src="@drawable/default_profile"
-                        />
-                </LinearLayout>
-
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical">
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="0dp"
-                    android:layout_weight="1"
-                    android:orientation="horizontal">
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:layout_marginLeft="10dp"/>
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:layout_marginLeft="5dp"
-                        android:layout_marginRight="5dp"
-                        android:gravity="center"
-                        android:text="두번째 채팅방(리니어)"
-                        android:textStyle="bold"
-                        android:textSize="20dp"
-                        android:textColor="#000000"
-                        />
-                    <ImageView
-                        android:layout_width="15dp"
-                        android:layout_height="match_parent"
-                        android:layout_marginLeft="5dp"
-                        android:src="@drawable/mark_pin"/>
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="0dp"
-                    android:layout_weight="1">
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:layout_marginLeft="10dp"
-                        android:gravity="center"
-                        android:text="받은메시지"
-                        android:textSize="15dp"
-                        android:textColor="#808080"/>
-                </LinearLayout>
-            </LinearLayout>
-        </LinearLayout>
-
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/const_chatlist_01"
-            android:layout_width="match_parent"
-            android:layout_height="70dp"
-            android:layout_marginTop="5dp"
-            android:layout_marginBottom="5dp">
-            <View
-                android:id="@+id/const_chatlist_thumbnailbox_01"
-                android:layout_width="70dp"
-                android:layout_height="match_parent"
-                android:layout_marginLeft="10dp"
-                app:layout_constraintTop_toTopOf="@id/const_chatlist_01"
-                app:layout_constraintLeft_toLeftOf="@id/const_chatlist_01" />
-            <ImageView
-                android:id="@+id/const_chatlist_thumbnail_01"
-                android:layout_width="0dp"
-                android:layout_height="0dp"
-                android:layout_margin="2dp"
-                app:layout_constraintTop_toTopOf="@id/const_chatlist_thumbnailbox_01"
-                app:layout_constraintBottom_toTopOf="@id/const_chatlist_thumbnail_03"
-                app:layout_constraintLeft_toLeftOf="@id/const_chatlist_thumbnailbox_01"
-                app:layout_constraintRight_toLeftOf="@id/const_chatlist_thumbnail_02"
-                android:src="@drawable/default_profile"
-                />
-            <ImageView
-                android:id="@+id/const_chatlist_thumbnail_02"
-                android:layout_width="0dp"
-                android:layout_height="0dp"
-                android:layout_margin="2dp"
-                app:layout_constraintTop_toTopOf="@id/const_chatlist_thumbnailbox_01"
-                app:layout_constraintBottom_toTopOf="@id/const_chatlist_thumbnail_04"
-                app:layout_constraintLeft_toRightOf="@id/const_chatlist_thumbnail_01"
-                app:layout_constraintRight_toRightOf="@id/const_chatlist_thumbnailbox_01"
-                android:src="@drawable/default_profile"
-                />
-            <ImageView
-                android:id="@+id/const_chatlist_thumbnail_03"
-                android:layout_width="0dp"
-                android:layout_height="0dp"
-                android:layout_margin="2dp"
-                app:layout_constraintTop_toBottomOf="@id/const_chatlist_thumbnail_01"
-                app:layout_constraintBottom_toBottomOf="@id/const_chatlist_thumbnailbox_01"
-                app:layout_constraintLeft_toLeftOf="@id/const_chatlist_thumbnailbox_01"
-                app:layout_constraintRight_toLeftOf="@id/const_chatlist_thumbnail_04"
-                android:src="@drawable/default_profile"
-                />
-            <ImageView
-                android:id="@+id/const_chatlist_thumbnail_04"
-                android:layout_width="0dp"
-                android:layout_height="0dp"
-                android:layout_margin="2dp"
-                app:layout_constraintTop_toBottomOf="@id/const_chatlist_thumbnail_02"
-                app:layout_constraintBottom_toBottomOf="@id/const_chatlist_thumbnailbox_01"
-                app:layout_constraintLeft_toRightOf="@id/const_chatlist_thumbnail_03"
-                app:layout_constraintRight_toRightOf="@id/const_chatlist_thumbnailbox_01"
-                android:src="@drawable/default_profile"
-                />
-            <View
-                android:layout_width="0dp"
-                android:layout_height="0dp"
-                app:layout_constraintTop_toTopOf="@id/const_chatlist_01"
-                app:layout_constraintLeft_toRightOf="@id/const_chatlist_thumbnailbox_01"
-                app:layout_constraintRight_toRightOf="@id/const_chatlist_01"
-                app:layout_constraintBottom_toBottomOf="@id/const_chatlist_01"
-                >
-                <ImageView
-                    android:id="@+id/const_chatlist_01_mark_open_chat"
-                    android:layout_width="0dp"
-                    android:layout_height="0dp"
-                    android:src="@drawable/mark_open_chat"
-                    app:layout_constraintTop_toTopOf="@id/const_chatlist_01"
-                    app:layout_constraintBottom_toTopOf="@id/const_chatlist_01_preview"
-                    app:layout_constraintLeft_toRightOf="@id/const_chatlist_thumbnailbox_01"
-                    app:layout_constraintRight_toRightOf="@id/const_chatlist_01_title"
-                    />
-                <TextView
-                    android:id="@+id/const_chatlist_01_title"
-                    android:layout_width="wrap_content"
-                    android:layout_height="0dp"
-                    android:text="세번째 채팅방(컨스트)"
-                    android:textSize="20dp"
-                    android:textStyle="bold"
-                    android:textColor="#000000"
-                    app:layout_constraintTop_toTopOf="@id/const_chatlist_01"
-                    app:layout_constraintBottom_toTopOf="@id/const_chatlist_01_preview"
-                    app:layout_constraintLeft_toRightOf="@id/const_chatlist_01_mark_open_chat"
-                    app:layout_constraintRight_toLeftOf="@id/const_chatlist_01_mark_pin"
-                    />
-                <ImageView
-                    android:id="@+id/const_chatlist_01_mark_pin"
-                    android:layout_width="0dp"
-                    android:layout_height="0dp"
-                    app:layout_constraintTop_toTopOf="@id/const_chatlist_01"
-                    app:layout_constraintBottom_toTopOf="@id/const_chatlist_01_preview"
-                    app:layout_constraintLeft_toRightOf="@id/const_chatlist_01_title"
-                    app:layout_constraintRight_toRightOf="@id/const_chatlist_01"
-                    />
-                <TextView
-                    android:id="@+id/const_chatlist_01_preview"
-                    android:layout_width="wrap_content"
-                    android:layout_height="0dp"
-                    android:text="메시지"
-                    app:layout_constraintTop_toBottomOf="@id/const_chatlist_01_title"
-                    app:layout_constraintBottom_toBottomOf="@id/const_chatlist_01"
-                    app:layout_constraintLeft_toRightOf="@id/const_chatlist_thumbnailbox_01"
-                    app:layout_constraintRight_toRightOf="@id/const_chatlist_01"
-                    />
-            </View>
-
-        </androidx.constraintlayout.widget.ConstraintLayout>
     </LinearLayout>
 
 
